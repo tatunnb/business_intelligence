@@ -1,0 +1,12 @@
+---
+title: "Untitled"
+author: "Tatum"
+date: "2026-08-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#ISA 401: Business Intelligence & Data Visualization, Tatum Buhiru, Semester: Fall 2026
