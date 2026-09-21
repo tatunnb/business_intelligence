@@ -1,0 +1,51 @@
+---
+title: "Class 07"
+author: "Tatum"
+date: "2026-09-21"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    number_sections: TRUE
+    code_download: TRUE
+    code_folding: show
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/scout.db")
+postings = DBI::dbReadTable(con, "scout_postings") |> tibble::as_tibble()
+DBI::dbDisconnect(con)
+
+jobs = postings |>
+  dplyr::select(company, title, location_state, remote, category, posted_at, last_seen_at) |>
+  dplyr::mutate(dplyr::across(dplyr::ends_with("_at"), as.Date),
+                days_open = as.numeric(last_seen_at - posted_at))
+```
+
+```{r}
+jobs |> 
+  dplyr::group_by(category) |> 
+  dplyr::summarise(
+    postings = dplyr::n(), #counting rows by category
+    remote_share = mean(remote) |> round(3)
+  )
+```
+
+```{r}
+#among full time jobs, which state has the highest remote share
+jobs |> 
+  dplyr::filter(category == "fulltime") |> 
+  dplyr::group_by(location_state) |> 
+    dplyr::summarise(
+    postings = dplyr::n(), #counting rows by category
+    remote_share = mean(remote) |> round(3)
+  ) |> 
+  dplyr::filter(postings >= 50) |> 
+  dplyr::arrange(dplyr::desc(remote_share)) |> 
+  head(3)
+```
+

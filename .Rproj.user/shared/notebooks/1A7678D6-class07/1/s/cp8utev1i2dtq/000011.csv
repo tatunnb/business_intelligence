@@ -1,0 +1,8 @@
+"0","con = DBI::dbConnect(RSQLite::SQLite(), ""../data/scout.db"")"
+"0","postings = DBI::dbReadTable(con, ""scout_postings"") |> tibble::as_tibble()"
+"0","DBI::dbDisconnect(con)"
+"0",""
+"0","jobs = postings |>"
+"0","  dplyr::select(company, title, location_state, remote, category, posted_at, last_seen_at) |>"
+"0","  dplyr::mutate(dplyr::across(dplyr::ends_with(""_at""), as.Date),"
+"0","                days_open = as.numeric(last_seen_at - posted_at))"
