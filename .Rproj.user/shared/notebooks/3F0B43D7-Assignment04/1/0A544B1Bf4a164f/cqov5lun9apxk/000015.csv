@@ -1,0 +1,5 @@
+"0","sum(listings$city == ""Columbus"", na.rm = TRUE)"
+"1","[1]"
+"1"," 2587"
+"1","
+"

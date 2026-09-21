@@ -1,0 +1,66 @@
+---
+title: "Assignment04"
+author: "Tatum"
+date: "2026-09-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+install.packages("DBI")
+```
+```{r}
+install.packages("RSQLite")
+```
+
+```{r}
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/midwest_airbnb.db")
+listings = DBI::dbReadTable(con, "listings")
+```
+```{r}
+nrow(listings)
+```
+```{r}
+listings$city["Columbus"]
+```
+```{r}
+listings
+```
+```{r}
+listings[listings$city == "The Penthouse at River North", ]
+```
+```{r}
+listings[listings$name =="The Penthouse at Fulton Market",]
+```
+```{r}
+listings[listings$name =="The Penthouse at Old Town",]
+```
+
+```{r}
+listings[listings$name =="Premium Lake Views + Ideal for Group Getaways",]
+```
+```{r}
+length(unique(listings$neighbourhood))
+```
+```{r}
+sum(listings$city == "Columbus", na.rm = TRUE)
+```
+```{r}
+sum(listings$price > 1000)
+```
+
+```{r}
+listing$city
+```
+```{r}
+install.packages("readr")
+```
+
+```{r}
+run = readr::read_csv(
+  "https://isa401-find-your-seat.vercel.app/api/export?section=A&run=13")
+dplyr::glimpse(run)
+```
+

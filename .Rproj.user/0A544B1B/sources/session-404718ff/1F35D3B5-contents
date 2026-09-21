@@ -1,0 +1,26 @@
+---
+title: "Assignment04"
+author: "Tatum"
+date: "2026-09-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+install.packages("DBI")
+```
+```{r}
+install.packages("RSQLite")
+```
+
+```{r}
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/midwest_airbnb.db")
+listings = DBI::dbReadTable(con, "listings")
+```
+
+```{r}
+length(unique())
+```
+
