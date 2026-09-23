@@ -8,4 +8,4 @@
 "0","  ) |> "
 "0","  dplyr::filter(postings >= 50) |> "
 "0","  dplyr::arrange(dplyr::desc(remote_share)) |> "
-"0","  head(3)"
+"0","  na.omit()"

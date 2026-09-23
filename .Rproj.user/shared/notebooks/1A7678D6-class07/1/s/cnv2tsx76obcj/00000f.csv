@@ -1,0 +1,6 @@
+"0","#Add equation "
+"0","listings |> "
+"0","  dplyr::mutate(price_per_person = price / accommodates) |> "
+"0","  dplyr::select(city, host_name, name, price, accommodates, price_per_person) |> "
+"0","  dplyr::arrange(price_per_person) |> "
+"0","  head(3)"
