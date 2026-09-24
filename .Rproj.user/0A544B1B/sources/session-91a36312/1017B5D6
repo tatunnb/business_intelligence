@@ -1,26 +1,26 @@
 {
-    "id": "EBF85E38",
+    "id": "1017B5D6",
     "path": "C:/Users/tatum/Downloads/business_intelligence/apps/midwest_airbnb_chat/app.R",
     "project_path": "apps/midwest_airbnb_chat/app.R",
     "type": "r_source",
-    "hash": "801545505",
+    "hash": "3362817150",
     "contents": "",
     "dirty": false,
-    "created": 1790264711670.0,
+    "created": 1790286944455.0,
     "source_on_save": false,
-    "relative_order": 6,
+    "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "45,0",
-        "scrollLine": "16"
+        "cursorPosition": "18,1",
+        "scrollLine": "7"
     },
     "folds": "",
-    "lastKnownWriteTime": 1790272922,
+    "lastKnownWriteTime": 1790287401,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1790272922726,
+    "last_content_update": 1790287401623,
     "read_only": false,
     "read_only_alternatives": []
 }

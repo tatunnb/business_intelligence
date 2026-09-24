@@ -1,0 +1,323 @@
+html = readLines(con = "index.html", encoding = "UTF-8", warn = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+run = readr::read_csv(
+"https://isa401-find-your-seat.vercel.app/api/export?section=A&run=13")
+install.packages(readr)
+install.packages("readr")
+run = readr::read_csv(
+"https://isa401-find-your-seat.vercel.app/api/export?section=A&run=13")
+dplyr::glimpse(run)
+install.packages("querychat")
+installed.packages("usethis")
+install.packages("usethis")
+usethis::edit_r_environ(scope = "project")
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+install.packages("querychat")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+install.packages("querychat", dependencies = T)
+install.packages("installr")
+library(installr)
+updateR()
+updateR()
+sessionInfo()
+updateR()
+install.packages("installr")
+library(installr)
+updateR()
+install.packages("querychat", dependencies = T)
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+install.packages("querychat", dependencies = T)
+library(querychat)
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+install.packages("querychat", dependencies = TRUE)
+con = DBI::dbConnect(RSQLite::SQLite(),
+"../data/scout.db")
+library(querychat)
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+library(querychat)
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/scout.db")
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+library(querychat)
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+setwd("C:/Users/tatum/Downloads/business_intelligence/apps/job_scout_chat")
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+qc$app_obj()
+qc$app_obj()
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+qc$app_obj()
+qc$app_obj()
+qc$app_obj()
+install.packages("usethis")
+usethis::edit_r_environ(scope = "project")
+qc$app_obj()
+library(querychat)
+con = DBI::dbConnect(RSQLite::SQLite(), "data/scout.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat(
+con, "scout_postings",
+client   = client,
+tools    = c("filter", "query", "visualize"),
+greeting = "Ask me about the 1,891 job postings
+ChatISA Job Scout collected."
+)
+qc$app_obj()
+install.packages("ggsql")
+setwd("C:/Users/tatum/Downloads/business_intelligence/Markdowns")
+knitr::opts_chunk$set(echo = TRUE)
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/scout.db")
+postings = DBI::dbReadTable(con, "scout_postings") |> tibble::as_tibble()
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/scout.db")
+postings = DBI::dbReadTable(con, "scout_postings") |> tibble::as_tibble()
+DBI::dbDisconnect(con)
+jobs = postings |>
+dplyr::select(company, title, location_state, remote, category, posted_at, last_seen_at) |>
+dplyr::mutate(dplyr::across(dplyr::ends_with("_at"), as.Date),
+days_open = as.numeric(last_seen_at - posted_at))
+dplyr::glimpse(con)
+dplyr::glimpse(postings)
+jobs |>
+dplyr::group_by(category) |>
+dplyr::summarise(
+postings = dplyr::n()
+)
+jobs |>
+dplyr::group_by(category) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote)
+)
+jobs |>
+dplyr::group_by(category) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+)
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state)
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+)
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state)
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::arrange(dplyr::desc(remote_share))
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state)
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::arrange(dplyr::desc(remote_share))
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::arrange(dplyr::desc(remote_share))
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::filter(postings >= 50)
+dplyr::arrange(dplyr::desc(remote_share))
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::filter(postings >= 50) |>
+dplyr::arrange(dplyr::desc(remote_share))
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::filter(postings >= 50) |>
+dplyr::arrange(dplyr::desc(remote_share)) |>
+head(3)
+setwd("C:/Users/tatum/Downloads/business_intelligence/Markdowns")
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/scout.db")
+postings = DBI::dbReadTable(con, "scout_postings") |> tibble::as_tibble()
+DBI::dbDisconnect(con)
+jobs = postings |>
+dplyr::select(company, title, location_state, remote, category, posted_at, last_seen_at) |>
+dplyr::mutate(dplyr::across(dplyr::ends_with("_at"), as.Date),
+days_open = as.numeric(last_seen_at - posted_at))
+#among full time jobs, which state has the highest remote share
+jobs |>
+dplyr::filter(category == "fulltime") |>
+dplyr::group_by(location_state) |>
+dplyr::summarise(
+postings = dplyr::n(), #counting rows by category
+remote_share = mean(remote) |> round(3)
+) |>
+dplyr::filter(postings >= 50) |>
+dplyr::arrange(dplyr::desc(remote_share)) |>
+na.omit()
+con = DBI::dbConnect(RSQLite::SQLite(), "../data/midwest_airbnb.db")
+listings = DBI::dbReadTable(con, "listings") |>
+tibble::as_tibble()
+DBI::dbDisconnect(con)
+dplyr::glimpse(listings)
+listings |>
+dplyr::filter(
+room_type == "Entire home/apt" & accommodates >= 4
+) |>
+dplyr::group_by(city) |>
+dplyr::summarise(
+median_price = median(price)
+)
+#Add equation
+listings |>
+dplyr::mutate(price_per_person = price / accommodates) |>
+dplyr::select(city, host_name, name, price, accommodates, price_per_person) |>
+dplyr::arrange(price_per_person) |>
+head(3)
+#Which five host names have the most listings
+listings |> dplyr::count(host_name, sort = T)
+#Which five host names have the most listings
+listings |> dplyr::count(host_name, sort = T)
+listings |> dplyr::count(host_name,host_id, sort = T)
+con = DBI::dbConnect(RSQLite::SQLite(), "data/midwest_airbnb.db")
+setwd("C:/Users/tatum/Downloads/business_intelligence/apps/midwest_airbnb")
+con = DBI::dbConnect(RSQLite::SQLite(), "data/midwest_airbnb.db")
+client = ellmer::chat_openai(
+model  = "gpt-5.6-luna",
+params = ellmer::params(reasoning_effort = "none")
+)
+qc = querychat::querychat(
+con, "listings",
+client             = client,
+tools              = c("filter", "query", "visualize"),
+greeting           = "Ask me about 14,887 Airbnb listings in Chicago, Columbus, and the Twin Cities.",
+data_description   = "data/data_desc.md",
+extra_instructions = "data/extra_instructions.md"
+)
+qc$app_obj()
+qc$app_obj()
+install.packages("shiny")
+install.packages("shiny")
